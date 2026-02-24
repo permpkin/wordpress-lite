@@ -6,7 +6,7 @@
  * Author URI: https://aaemnnost.tv
  * Plugin URI: https://github.com/aaemnnosttv/wp-sqlite-db
  * Version: 1.3.1
- * Requires PHP: 5.6
+ * Requires PHP: 7.2
  *
  * This project is based on the original work of Kojima Toshiyasu and his SQLite Integration plugin.
  */
