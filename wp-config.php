@@ -13,7 +13,7 @@
  * * Database table prefix
  * * ABSPATH
  *
- * @link https://wordpress.org/support/article/editing-wp-config-php/
+ * @link https://wordpress.org/documentation/article/editing-wp-config-php/
  *
  * @package WordPress
  */
@@ -32,7 +32,7 @@ define( 'DB_PASSWORD', 'password_here' );
 define( 'DB_HOST', 'localhost' );
 
 /** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
@@ -83,11 +83,29 @@ $table_prefix = 'wp_';
  * For information on other constants that can be used for debugging,
  * visit the documentation.
  *
- * @link https://wordpress.org/support/article/debugging-in-wordpress/
+ * @link https://wordpress.org/documentation/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
+
+/**
+ * When WP_DEBUG is true, also log errors to a file instead of displaying them.
+ * Define WP_DEBUG_LOG as a path string to use a custom log file location.
+ */
+define( 'WP_DEBUG_LOG', false );
+
+/**
+ * When WP_DEBUG is true, disable display of errors on-screen.
+ * Keep this false in production to avoid leaking information.
+ */
+define( 'WP_DEBUG_DISPLAY', false );
+
+/**
+ * Disable the plugin and theme editor in the admin panel.
+ * Recommended for production sites as a security hardening measure.
+ */
+define( 'DISALLOW_FILE_EDIT', true );
 
 /* That's all, stop editing! Happy publishing. */
 
